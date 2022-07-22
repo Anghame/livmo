@@ -1,0 +1,202 @@
+<div class="flex flex-col mt-20 bg-cover bg-bottom relative w-full h-[870px]" style="background-image: url(assets/img/homepic.png)">
+    <div class=" flex justify-center mt-40 z-10 w-full gap-8 p-4 text-xl " >
+     
+
+        <div class="rounded-lg bg-white px-4 py-1 shadow-md flex items-center gap-4 ">  
+            <img src="assets/img/WhereSearch.png" class=" flex-row cursor-pointer pt-0 text-2xl pl-1 text-rose-500 md:text-black" alt="">
+            <input type="text" class="px-4 py-1 shadow-md flex items-center gap-4 " style="font-style:bold" value="Where ? country" >
+        </div>
+
+        <div class="rounded-lg bg-white px-4 py-1 shadow-md flex items-center gap-4 "> 
+            <!--class="flex-col flex-grow pb-4 md:pb-0 md:justify-end md:flex-row"-->
+            <img src="assets/img/WhenSearch.png" class=" flex-row cursor-pointer pt-0 text-2xl pl-1 text-rose-500 md:text-black" alt="">
+            <label > <b> When ? intervall</b> </label>
+            
+        
+            <mat-form-field appearance="legacy">
+              
+              <mat-date-range-input [rangePicker]="picker" [formGroup]="dateRange">
+                <input matStartDate formControlName="start" placeholder="Start Date">
+                <input matEndDate formControlName="end" placeholder="End Date">
+              </mat-date-range-input>
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-date-range-picker #picker></mat-date-range-picker>
+            </mat-form-field>
+           <!-- <h2>
+              Start: {{dateRange.value.start | date}}
+              End: {{dateRange.value.end | date}}
+            </h2>-->
+        </div>
+        <div class="rounded-lg bg-white px-4 py-1 shadow-md flex items-center gap-4 "> 
+
+            <!--class="flex-col flex-grow pb-4 md:pb-0 md:justify-end md:flex-row"-->
+            <img src="assets/img/PeopleSearch.png" class=" flex-row  pt-0 text-2xl pl-1 text-rose-500 md:text-black" alt="">
+            <label  ><b>People </b></label>
+            <input type="number" class="outline-none w-10 h-10 " >
+        </div>
+
+      
+        <div class="primary-button flex items-center justify-center px-4 py-1 w-16 h-25 rounded-md">
+            <i class="pi pi-search"></i>
+        </div>
+    </div>
+    <div class="mt-14 flex flex-col p-4 z-10">
+        <div id="text" class="w-2/5 text-white text-7xl font-bold leading-snug tracking-widest font-style-Montserrat">YOU DON’T KNOW
+            WHERE TO GO?
+            PERFECT!</div>
+    </div>
+    <div class=" p-8 z-10">
+        <button class="primary-button"id="bouton"> Let's Go</button>
+    </div>
+</div>
+<div class="py-14 px-20 ">
+    <p-carousel [value]="themes" [autoplayInterval]="6000" [circular]="true" [numVisible]="4" [numScroll]="1">
+
+        <ng-template let-theme pTemplate="item">
+            <div [style]="'background-image:url('+ theme.image +')'" [class]="theme.id % 2 == 0 ? 'mt-28' : 'mb-28'"
+                class="mx-10 rounded-xl flex h-[650px] w items-center justify-center bg-black p-4 text-white text-3xl font-bold bg-cover">
+                {{theme.title}}
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>
+<div class="flex justify-center mt-4 text-5xl font-bold "> Discover the secheduled Experiences </div>
+<div class="flex justify-center w-full mt-16 mb-14  ">
+    <div class="grid grid-cols-2 gap-10 justify-center max-w-2xl">
+        <div class="flex flex-col items-center rounded-xl  h-80 w-[600px] justify-center p-4 text-white text-3xl font-bold bg-cover "
+            style="background-image: url(assets/img/carthage.png)">
+            <div class="flex text-3xl font-bold tracking-widest"> Carthage Festival </div>
+        </div>
+        <div class="flex flex-col items-center rounded-xl h-80 w-[600px] justify-center p-4 text-white text-3xl font-bold bg-cover  "
+            style="background-image: url(assets/img/dunes.png)">
+            <div class="flex text-3xl font-bold tracking-widest"> The Electronic Dunes </div>
+        </div>
+        <div
+            class="flex flex-col items-start rounded-xl h-80 w-[600px] justify-center p-4 text-black text-3xl font-bold ">
+            <div class="flex text-5xl font-bold tracking-widest mb-2 "> Explore every corner </div>
+            <div class="flex text-5xl font-bold tracking-widest mb-2"> of the country </div>
+            <div class="flex text-5xl font-bold tracking-widest mb-2 "> with us ! </div>
+            <span class="font-bold text-sm leading-4 tracking-widest mb-3 text-red-500">Discover how it works ! </span>
+
+        </div>
+        <div class="flex flex-col items-center rounded-xl h-80 w-[600px] justify-center p-4 text-white text-3xl font-bold "
+            style="background-image: url(assets/img/discover.png)">
+            <button class="verify-buttonexp text-lg">Discover</button>
+        </div>
+    </div>
+</div>
+<div class="flex justify-center mt-4 text-5xl font-bold"> Become a service provider </div>
+<div class="flex justify-center w-full mt-16 mb-14  ">
+    <div class="grid grid-cols-2 gap-10 justify-center max-w-2xl">
+        <button
+            class="flex flex-col items-center rounded-xl  h-80 w-[600px] justify-center p-4 text-white text-3xl font-bold bg-cover "
+            style="background-image: url(assets/img/bchost.png)">
+            <div class="flex text-3xl font-bold tracking-widest"> Become a Host </div>
+        </button>
+        <button
+            class="flex flex-col items-center rounded-xl h-80 w-[600px] justify-center p-4 text-white text-3xl font-bold bg-cover "
+            style="background-image: url(assets/img/bcmarchant.png)">
+            <div class="flex text-3xl font-bold tracking-widest"> Become a Marchant </div>
+        </button>
+    </div>
+</div>
+<div class="flex justify-center mt-4 text-5xl font-bold my-10"> Why Book with LIVMO ? </div>
+
+<div class="flex justify-center items-center">
+
+  
+
+    <div  class="basis-1/4"> 
+        <div class="flex items-center justify-center" >
+
+        <img src="assets/img/why1.png" class="snap-center m-0" alt="">
+        </div>
+       
+        <div  class="text-center font-bold font-Montserrat text-2xl ">Total flexibility</div>
+        <br>
+        <div  class="text-center ">You're in control with free </div>
+        <div  class="text-center">cancellation and multiple payment options </div>
+        <div  class="text-center">  that fit your plans and budget</div>
+          </div>
+          
+    <div  class="basis-1/4">
+        <div class="flex items-center justify-center" >
+        <img src="assets/img/why2.png" class="scroll-ml-0"  alt="">
+        </div> 
+        
+        <div class="text-center font-bold font-Montserrat text-2xl">Unforgettable  Experiences</div>
+        <br>
+        <div  class="text-center">Discover and book tours and   </div>
+            <div   class="text-center"> activities so great that you'll want </div>
+                <div  class="text-center" >  to tell everyone about it.</div>
+
+    </div>
+
+
+    <div  class="basis-1/4"> 
+        <div class="flex items-center justify-center" >
+
+        <img src="assets/img/why3.png" class="snap-center m-0" alt="">
+        </div>
+       
+        <div  class="text-center font-bold font-Montserrat text-2xl ">Quality First</div>
+        <br>
+        <div  class="text-center ">High quality standards. </div>
+        <div  class="text-center"> Millions of reviews.           <br> </div>
+        <br>
+        <br> </div>
+
+     
+
+ 
+
+
+    <div  class="basis-1/4">
+        <div class="flex items-center justify-center" >
+        <img src="assets/img/why4.png"   alt="">
+         </div>
+         
+
+            <div  class="text-center font-bold font-Montserrat text-2xl">Award-Winning </div>
+            <div  class="text-center font-bold font-Montserrat text-2xl">Customer Service</div>
+        
+        <div  class="text-center">A new price ? A new program ? </div>
+        <div  class="text-center">No problem.</div>
+        <div  class="text-center"> We are at your disposal, 24/7</div>
+          </div>
+        
+        
+         
+
+
+
+
+    </div>  
+ 
+
+
+
+<div class="mb-32"></div>
+<div class="mt-8">
+    <fieldset class="border-t-4 border-b-0 border-black border">
+        <legend class=" px-4 text-red-500 text-3xl font-bold mx-auto leading-4 tracking-widest ">  Follow Us #LIVMO  
+        </legend>
+    </fieldset>
+</div>
+
+<div class="flex justify-center w-full mt-16 mb-28">
+    <div class="grid grid-cols-4 gap-24 justify-center max-w-7xl ">
+        <div class="flex flex-col items-center rounded-xl h-[250px] w-[250px] justify-center p-4 text-white text-3xl font-bold bg-cover  mb-28 "
+            style="background-image: url(assets/img/follow1.png)">
+        </div>
+        <div class="flex flex-col items-center rounded-xl h-[250px] w-[250px] justify-center p-4 text-white text-3xl font-bold bg-cover mt-28 "
+            style="background-image: url(assets/img/follow2.png)">
+        </div>
+        <div class="flex flex-col items-center rounded-xl h-[250px] w-[250px] justify-center p-4 text-white text-3xl font-bold bg-cover mb-28 "
+            style="background-image: url(assets/img/follow3.png)">
+        </div>
+        <div class="flex flex-col items-center rounded-xl h-[250px] w-[250px] justify-center p-4 text-white text-3xl font-bold bg-cover mt-28 "
+            style="background-image: url(assets/img/follow4.png)">
+        </div>
+    </div>
+</div>
