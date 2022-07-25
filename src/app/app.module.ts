@@ -25,6 +25,8 @@ import {ButtonModule} from 'primeng/button';
 import {InputTextareaModule} from 'primeng/inputtextarea';
 import {CalendarModule} from 'primeng/calendar';
 import { HostProfileComponent } from './Views/host-profile/host-profile.component';
+import { MarchantComponent } from './Views/marchant/marchant.component';
+import { SettingHostComponent } from './Views/setting-host/setting-host.component';
 
 
 @NgModule({
@@ -34,6 +36,8 @@ import { HostProfileComponent } from './Views/host-profile/host-profile.componen
     HomeComponent,
     FooterComponent,
     HostProfileComponent,
+    MarchantComponent,
+    SettingHostComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "ng-cli-universal" }),

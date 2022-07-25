@@ -1,5 +1,5 @@
 <div class="flex flex-col mt-20 bg-cover bg-bottom relative w-full h-[870px]" style="background-image: url(assets/img/homepic.png)">
-    <div class=" flex justify-center mt-40 z-10 w-full gap-8 p-4 text-xl " >
+    <div class="flex justify-center mt-40 z-10 w-full gap-8 p-4 text-xl " >
      
 
         <div class="rounded-lg bg-white px-4 py-1 shadow-md flex items-center gap-4 ">  
@@ -12,17 +12,16 @@
             <img src="assets/img/WhenSearch.png" class=" flex-row cursor-pointer pt-0 text-2xl pl-1 text-rose-500 md:text-black" alt="">
             <label > <b> When ? intervall</b> </label>
             
-        
-            <mat-form-field appearance="legacy">
+            <mat-form-field  [style.width.px]=150>
               
-              <mat-date-range-input [rangePicker]="picker" [formGroup]="dateRange">
-                <input matStartDate formControlName="start" placeholder="Start Date">
-                <input matEndDate formControlName="end" placeholder="End Date">
-              </mat-date-range-input>
-              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-              <mat-date-range-picker #picker></mat-date-range-picker>
-            </mat-form-field>
-           <!-- <h2>
+                <mat-date-range-input [rangePicker]="picker" [formGroup]="dateRange">
+                  <input matStartDate formControlName="start" placeholder="Start">
+                  <input matEndDate formControlName="end" placeholder="End">
+                </mat-date-range-input>
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-date-range-picker #picker></mat-date-range-picker>
+              </mat-form-field>
+              <!-- <h2>
               Start: {{dateRange.value.start | date}}
               End: {{dateRange.value.end | date}}
             </h2>-->
@@ -32,11 +31,11 @@
             <!--class="flex-col flex-grow pb-4 md:pb-0 md:justify-end md:flex-row"-->
             <img src="assets/img/PeopleSearch.png" class=" flex-row  pt-0 text-2xl pl-1 text-rose-500 md:text-black" alt="">
             <label  ><b>People </b></label>
-            <input type="number" class="outline-none w-10 h-10 " >
+            <input type="number" class="outline-none w-10 h-10" >
         </div>
-
       
-        <div class="primary-button flex items-center justify-center px-4 py-1 w-16 h-25 rounded-md">
+        <div class="primary-button flex items-center justify-center px-4 py-1 w-16 h-25 rounded-md"
+        >
             <i class="pi pi-search"></i>
         </div>
     </div>
@@ -100,7 +99,7 @@
         </button>
     </div>
 </div>
-<div class="flex justify-center mt-4 text-5xl font-bold my-10"> Why Book with LIVMO ? </div>
+<div class="flex justify-center mt-4 text-5xl font-bold my-8"> Why Book with LIVMO ? </div>
 
 <div class="flex justify-center items-center">
 
@@ -200,3 +199,4 @@
         </div>
     </div>
 </div>
+  
