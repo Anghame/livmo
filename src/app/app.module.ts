@@ -27,6 +27,7 @@ import {CalendarModule} from 'primeng/calendar';
 import { HostProfileComponent } from './Views/host-profile/host-profile.component';
 import { MarchantComponent } from './Views/marchant/marchant.component';
 import { SettingHostComponent } from './Views/setting-host/setting-host.component';
+import { AboutHostComponent } from './Views/about-host/about-host.component';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { SettingHostComponent } from './Views/setting-host/setting-host.componen
     HostProfileComponent,
     MarchantComponent,
     SettingHostComponent,
+    AboutHostComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: "ng-cli-universal" }),

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SelectItem, PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-setting-host',
@@ -6,11 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./setting-host.component.css']
 })
 export class SettingHostComponent implements OnInit {
-  isSelected:any;
+  isSelected:any='personal';
+  stateOptions: any[];
+  value1: string = 'off';
 
-  constructor() { }
+  constructor(private primeNGConfig: PrimeNGConfig) {
+    this.stateOptions = [
+      { label: 'Off', value: 'off' },
+      { label: 'On', value: 'on' },
+    ];
+   }
 
   ngOnInit(): void {
+    this.primeNGConfig.ripple = true;
   }
   OpenP() : void {
     this.isSelected='personal';
@@ -36,10 +45,6 @@ export class SettingHostComponent implements OnInit {
     
     
   }
-  affecterClass() {
-    return {
-      "text-sky-600" : true 
-    };
-  }
+
 
 }

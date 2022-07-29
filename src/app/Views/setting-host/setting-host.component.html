@@ -1,7 +1,7 @@
 
 
 
-<div class="inline-flex overflow-hidden w-full relative flex-col  ">
+<div class="inline-flex overflow-hidden w-full relative flex-col ml-40 ">
     <span class=" mt-36 "></span>
     <div class="rounded-lg bg-white px-4 py-1 shadow-md flex items-center gap-4 ">  
     <div class="image overflow-hidden ">
@@ -25,27 +25,27 @@
        <div class="container mx-auto my-5 p-5">
         <div class="md:flex no-wrap md:-mx-2 ">
             <!-- Left Side -->
-            <div class="w-full md:w-3/12 md:mx-2">
+            <div class="w-full md:w-3/12 md:mx-2 ">
                 
                 <div class="my-4"></div>
                 <!-- Friends card -->
-                <div class="bg-white hover:shadow">
+                <div class="bg-white hover:shadow ml-40">
 
                     <div >
                         <div class="my-4">
                         <span class="font-bold text-xl leading-4 tracking-widest mb-3">Setting :</span>  
                         </div>
                         <div class="my-4">
-                        <a class=" text-l leading-4 tracking-widest mb-3" [ngClass]="{style:isSelected=='personal'}" (click)="OpenP()" >Personal Information </a>
+                        <a class=" cursor-pointer text-l leading-4 tracking-widest mb-3" [ngClass]="{style:isSelected=='personal'}" (click)="OpenP()" >Personal Information </a>
                         </div>
                         <div class="my-4">
-                        <a class=" text-l leading-4 tracking-widest mb-3" [ngClass]="{style:isSelected=='connect'}"(click)="OpenC()">Connection & Security</a>  
+                        <a class=" cursor-pointer text-l leading-4 tracking-widest mb-3" [ngClass]="{style:isSelected=='connect'}"(click)="OpenC()">Connection & Security</a>  
                         </div>
                         <div class="my-4">
-                        <a class=" text-l leading-4 tracking-widest mb-3" [ngClass]="{style:isSelected=='help'}"(click)="OpenH()">Help </a>
+                        <a class=" cursor-pointer text-l leading-4 tracking-widest mb-3" [ngClass]="{style:isSelected=='help'}"(click)="OpenH()">Help </a>
                         </div> 
                         <div class="my-4">
-                       <a class=" text-l leading-4 tracking-widest mb-3" [ngClass]="{style:isSelected=='out'}"(click)="OpenL()">Log Out</a> 
+                       <a class=" cursor-pointer text-l leading-4 tracking-widest mb-3" [ngClass]="{style:isSelected=='out'}"(click)="OpenL()">Log Out</a> 
                         </div> 
 
                    
@@ -61,7 +61,6 @@
                 
                 <!-- About Section -->
                 <div class="bg-white p-3 shadow-sm rounded-sm">
-                    <span class="font-bold text-2xl leading-10 pl-40"> Change your informations</span>
 
 
                     <div class=" px-4 py-1 flex items-center gap-4 ">  
@@ -84,26 +83,27 @@
                 
                 <div class="bg-white p-3 shadow-sm rounded-sm">
                     
+                    <span class="font-bold text-2xl leading-10 pl-40"> Change your informations</span>
 
                     
                     <div class="flex flex-col mt-6 mb-14 items-center w-full">
                         <div class="grid grid-cols-2 gap-16 justify-center mt-4 max-w-4xl w-full">
                             <div class=" flex flex-col items-start">
-                                <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-48 ">
+                                <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-56">
                                     <input type="text" placeholder="First name"
                                         class="form-control outline-none  h-8">
                                 </div>
                             </div>
 
                             <div class=" flex flex-col items-start">
-                                <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-48 ">
+                                <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-56 ">
                                     <input type="text " placeholder="last name "
                                         class="form-control outline-none  h-8">
                                 </div>
                             </div>
 
                             <div class=" flex flex-col items-start">
-                                <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-48 ">
+                                <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-56 ">
                                     <img src="assets/img/WhenSearch.png" class=" flex-row cursor-pointer pt-0 text-l pl-1 text-rose-500 md:text-black" alt="">
 
                                     <input type="text"  placeholder="date of birth" 
@@ -111,14 +111,14 @@
                                 </div>
                             </div>
                             <div class=" flex flex-col items-start">
-                                <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-48 ">
+                                <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-56 ">
                                     <input type="text" placeholder="Country" 
                                         class="form-control outline-none w-full h-8">
                                 </div>
                             </div>
 
                             <div class=" flex flex-col items-start">
-                                <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-48 ">
+                                <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-56 ">
                                     <input type="text" placeholder="Phone number " 
                                         class="form-control outline-none w-full h-8">
                                 </div>
@@ -138,8 +138,14 @@
                                     <input type="range" max="1" id="choice" name="choice">
                                     <span aria-hidden="true">Yes</span>
                                   </div>
+                                
+                                
+
 
                             </div>
+                           <!-- <p-selectButton [options]="stateOptions" [(ngModel)]="value1" optionLabel="label" optionValue="value" ngDefaultControl class="bg-black"></p-selectButton> -->
+
+
 
                         </div>
 
@@ -193,7 +199,7 @@
 
                                 <div class=" flex flex-col items-start">
                                     <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-0 w-full border-2">
-                                        
+                                    
                                     </div>
                                 </div>
     
@@ -201,7 +207,7 @@
     
                                 <div class=" flex flex-col items-start">
                                     <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-full border-2">
-    
+                                        
                                         
                                     </div>
                                 </div>
@@ -210,23 +216,24 @@
                                     <span class=" text-xl leading-10 "> Change your password :</span>
                                     <hr style="width:30%;text-align:left;margin-left:0;">
                                 </div>
+
                                 <div class=" flex flex-col items-start">
-                                    <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-fall ">
-                                        <input type="text" placeholder="Current Password"
-                                            class="form-control outline-none ">
+                                    <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-80">
+                                        <input type="password" placeholder="Current Password"
+                                            class="form-control outline-none w-80 ">
                                     </div>
                                 </div>
                                 <div class=" flex flex-col items-start">
-                                    <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-fall ">
-                                        <input type="text" placeholder="New Password"
-                                            class="form-control outline-none ">
+                                    <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-80 ">
+                                        <input type="password" placeholder="New Password"
+                                            class="form-control outline-none w-80 ">
                                     </div>
                                 </div>
 
                                 <div class=" flex flex-col items-start">
-                                    <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-fall ">
-                                        <input type="text" placeholder="Confirm new Password"
-                                            class="form-control outline-none ">
+                                    <div class=" rounded-lg bg-white px-8 h-10 py-3 shadow-md flex items-center gap-4 w-80 ">
+                                        <input type="password" placeholder="Confirm new Password"
+                                            class="form-control outline-none w-80 ">
                                     </div>
                                 </div>
                                 

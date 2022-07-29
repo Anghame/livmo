@@ -5,6 +5,8 @@ import { UsersDashbaordComponent } from './Views/home/users-dashbaord/users-dash
 import { HostProfileComponent } from './Views/host-profile/host-profile.component';
 import { MarchantComponent } from './Views/marchant/marchant.component';
 import { SettingHostComponent } from './Views/setting-host/setting-host.component';
+import { AboutHostComponent } from './Views/about-host/about-host.component';
+
 
 
 
@@ -18,6 +20,8 @@ const routes: Routes = [
   },
   { path: "profilHost", component: HostProfileComponent},
   { path: "setHost", component: SettingHostComponent},
+  { path: "aboutHost", component: AboutHostComponent},
+
 
   { path: "marchant", component: MarchantComponent},
 

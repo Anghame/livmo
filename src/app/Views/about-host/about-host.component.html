@@ -1,0 +1,560 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+<div class="inline-flex overflow-hidden w-full relative flex-col ml-40 ">
+    <span class=" mt-36 "></span>
+    <div class=" px-4 py-1 grid grid-cols-2 gap-16 justify-center mt-4 max-w-4xl w-full ml-80">  
+
+        <div class=" flex flex-col items-start">
+            <div class="image overflow-hidden  ">
+                <img class="object-cover rounded-full h-36 w-36 "src="assets/img/commer.png" alt="">
+                    
+            </div>
+        </div>
+
+        <div class=" flex flex-col items-start">
+            <span class="font-bold text-2xl leading-10 text-black-500 ">NameHost</span>
+            <span class=" text-xl leading-10 text-black-500 ">Host </span> 
+        
+            <button class="previous-button3 ">Setting</button>
+            
+        </div>
+        
+
+    </div>
+   
+
+
+    
+</div>
+
+
+
+<div class="container mx-auto my-5 p-5">
+    <div class="md:flex no-wrap md:-mx-2 ">
+
+        <div class="flex-col flex-grow pb-4 md:pb-0 md:justify-end md:flex-row ml-32">
+        
+                <span class="flex flex-row cursor-pointer tracking-widest text-black-500   w-full px-14 py-2 mt-2 text-xl md:w-auto md:inline md:mt-0 md:ml-4 "
+                [ngClass]="{style:isSelected=='exp'}" (click)="OpenE()">
+                     My Experiences
+                </span>
+        
+        
+                <span class="flex flex-row cursor-pointer tracking-widest text-black-500   w-full px-14 py-2 mt-2 text-xl md:w-auto md:inline md:mt-0 md:ml-4 "
+                [ngClass]="{style:isSelected=='fav'}" (click)="OpenF()">
+                
+                    Favourites
+                </span>
+        
+        
+        
+                <span class="flex flex-row cursor-pointer tracking-widest text-black-500   w-full px-14 py-2 mt-2 text-xl md:w-auto md:inline md:mt-0 md:ml-4 "
+                [ngClass]="{style:isSelected=='req'}" (click)="OpenR()">
+                
+                    Requests
+                </span>
+      
+      
+                <span class="flex flex-row cursor-pointer tracking-widest text-black-500   w-full px-14 py-2 mt-2 text-xl md:w-auto md:inline md:mt-0 md:ml-4 "
+                [ngClass]="{style:isSelected=='pro'}" (click)="OpenP()">
+
+                        Profile
+                </span>
+    
+                        
+                <span class="flex flex-row cursor-pointer tracking-widest text-black-500   w-full px-14 py-2 mt-2 text-xl md:w-auto md:inline md:mt-0 md:ml-4 "
+                [ngClass]="{style:isSelected=='msg'}" (click)="OpenM()">
+
+                            Messages (1)
+                </span>
+      
+      
+        </div>
+        
+
+        <!-- ng container -->
+        
+
+    </div>
+    <hr>
+    <ng-container  *ngIf="isSelected == 'exp'">
+            
+        <div class="grid grid-cols-2 gap-4 mt-20  ml-80">
+            <div class=" flex flex-col items-start">
+                <img src="assets/img/travel.png" class=" flex-row  pt-0 text-2xl pl-1 text-rose-500 md:text-black" alt="">
+            </div>
+            <div class=" flex flex-col items-start">
+                <span class="font-bold text-rose-500 tracking-widest text-2xl leading-10 mt-2"> Experiences</span>
+            </div>
+            
+        </div>
+        
+                
+                
+                <div class="bg-white p-3 shadow-sm rounded-sm">
+                    
+                   
+
+                    
+                    <div class="flex flex-col mt-14 items-center w-full"> 
+
+                            <div  class="flex flex-col  gap-0 justify-between   w-6/12  bg-white rounded-lg border shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                <div class="flex flex-col justify-between p-4 leading-normal">
+                                    <div class="flex justify-between items-center">
+                                        <span class="mb-2 text-l font-bold tracking-tight text-gray-900 dark:text-white ">Experience's name</span>
+                                        <div class="z-10">
+                                            <button class="primary-button2 ml-16"id="bouton"> change </button>
+                                        </div>    
+                                        <div class="z-10 ">
+                                            <button class="primary-button2"id="bouton"> change</button>
+                                        </div>                                   
+                                    </div>
+
+
+                                    <div>
+                                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Description :</p>
+                                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    </div>
+
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                        <span class="mb-2 text-l font-bold tracking-tight text-gray-900 dark:text-white ">80 DT / Person</span>
+                                        <br><br>
+                                        <span class="mb-2 text-l font-bold tracking-tight text-gray-900 dark:text-white ">Bizert</span>
+
+                                        </div>
+                                        <div class="">
+                                            <span class="mb-2 ml-16 text-l font-bold tracking-tight text-gray-900 dark:text-white ">80 DT / Person</span>
+                                            <br><br>
+                                            <span class="mb-2 text-l ml-16 font-bold tracking-tight text-gray-900 dark:text-white ">Details</span>
+
+                                        </div>    
+                                                                      
+    
+    
+                                    </div>
+
+                                </div>
+
+                                
+                                <div class="bg-slate-900 rounded-lg text-center w-80 h-full">
+                                    
+                                    <br>
+                                    <span class="font-Montserrat text-xl   text-gray-50 tracking-widest m-8 mt-14">Your request is being processed by the administrator </span>  
+                                    <div class=" p-8 z-10">
+                                        <button class="previous-button2 text-black-500  border-2 "> Delete </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                           
+                            
+                        
+                        <span class=" mt-16 "></span>
+
+                        <button type="button"> <img src="assets/img/addE.png" height ="400" width="400" /></button>
+                        <hr class="mb-16">
+
+
+                            <div  class="flex flex-col  gap-0 justify-between   w-fit  bg-white rounded-lg border shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                <div class="flex flex-col justify-between p-4 leading-normal">
+                                    <div class="flex justify-between items-center">
+                                        <span class="mb-2 text-l font-bold tracking-tight text-gray-900 dark:text-white ">Experience's name</span>
+                                        <div class="z-10">
+                                            <button class="primary-button2 ml-16"id="bouton"> chabbbnge </button>
+                                        </div>    
+                                        <div class="z-10 ">
+                                            <button class="primary-button2"id="bouton"> change</button>
+                                        </div>                                   
+                                    </div>
+
+
+                                    <div>
+                                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Description :</p>
+                                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    </div>
+
+                                    <div class="flex justify-between items-center">
+                                        <div>
+                                        <span class="mb-2 text-l font-bold tracking-tight text-gray-900 dark:text-white ">80 DT / Person</span>
+                                        <br><br>
+                                        <span class="mb-2 text-l font-bold tracking-tight text-gray-900 dark:text-white ">Bizert</span>
+
+                                        </div>
+                                        <div class="">
+                                            <span class="mb-2 text-l font-bold tracking-tight text-gray-900 dark:text-white ">80 DT / Person</span>
+                                            <br><br>
+                                            <span class="mb-2 text-l  font-bold tracking-tight text-gray-900 dark:text-white ">Details</span>
+
+                                        </div>    
+                                        
+                                                                      
+    
+    
+                                    </div>
+                                    <div class="flex justify-center mt-6">
+                                        <div class="z-10 mx-2">
+                                            <button class="primary-button"id="bouton"> Edit </button>
+                                        </div>    
+                                        <div class="z-10 ">
+                                            <button class="previous-button"id="bouton"> Delete</button>
+                                        </div>  
+                                    </div>
+
+                                </div>
+
+                                <div class="max-w-xs">
+                                <img class="object-cover w-fit h-70 rounded-t-lg md:h-70 md:w-auto md:rounded-none md:rounded-l-lg ml-8 " src="assets/img/follow1.png" alt="">
+
+                                 </div>
+                            </div>
+                           
+                            
+                        
+
+                       
+                    </div>
+                    
+                
+                </div>
+                       
+                     
+            
+    </ng-container>
+
+    <ng-container  *ngIf="isSelected == 'fav'">
+            
+        <div class="grid grid-cols-2 gap-4 mt-20  ml-40">
+            <div class=" flex flex-col items-start">
+                <img src="assets/img/travel.png" class=" flex-row  pt-0 text-2xl pl-1 text-rose-500 md:text-black" alt="">
+            </div>
+            <div class=" flex flex-col items-start">
+                <span class="font-bold text-rose-500 tracking-widest text-2xl leading-10 mt-2"> Experiences</span>
+            </div>
+            
+        </div>
+        
+                
+                
+                <div class="bg-white p-3 shadow-sm rounded-sm">
+                    
+                    <div style='background-color:rgba(0, 0, 0, 0)'>
+                        <div class="container max-w-7xl mx-auto px-4" style="cursor: auto;">
+                        
+                          <div class="flex flex-wrap">
+                            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                              <div class="px-6">
+                                    <div class="relative">
+                                    <img alt="George Hoyt" src="assets/img/farhad.png"class="rounded-xl shadow-lg max-w-full h-auto align-middle border-none undefined" style="cursor: auto;">
+                                    <img class=" absolute top-0 p-2 rounded  right-0 m-2 " src="assets/img/heart.png">
+                                    </div>
+                                <div class="pt-6 flex justify-between items-center">
+                                  <h1 class="text-gray-900 text-xl font-serif font-bold leading-normal mt-0 mb-2">John Doe</h1>
+                                  <p class="text-blue-gray-700 text-base font-light leading-relaxed mt-0 mb-4">CEO</p>
+                                  <!-- <div class="flex items-center justify-center">
+                                    <button class="false flex items-center justify-center gap-1 font-bold outline-none uppercase tracking-wider focus:outline-none focus:shadow-none transition-all duration-300 rounded-full w-10 h-10 p-0 grid place-items-center text-xs leading-normal bg-transparent text-light-blue-500 hover:bg-light-blue-50 hover:text-light-blue-700 hover:bg-light-blue-50 active:bg-light-blue-100 undefined">
+                                      <i class="fab fa-twitter undefined text-lg"></i>
+                                    </button>
+                                    <button class="false flex items-center justify-center gap-1 font-bold outline-none uppercase tracking-wider focus:outline-none focus:shadow-none transition-all duration-300 rounded-full w-10 h-10 p-0 grid place-items-center text-xs leading-normal bg-transparent text-blue-500 hover:bg-blue-50 hover:text-blue-700 hover:bg-blue-50 active:bg-blue-100 undefined">
+                                      <i class="fab fa-facebook-f undefined text-lg"></i>
+                                    </button>
+                                    <button class="false flex items-center justify-center gap-1 font-bold outline-none uppercase tracking-wider focus:outline-none focus:shadow-none transition-all duration-300 rounded-full w-10 h-10 p-0 grid place-items-center text-xs leading-normal bg-transparent text-pink-500 hover:bg-pink-50 hover:text-pink-700 hover:bg-pink-50 active:bg-pink-100 undefined">
+                                      <i class="fab fa-dribbble undefined text-lg"></i>
+                                    </button>
+                                  </div> -->
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" style="cursor: auto;">
+                              <div class="px-6" style="cursor: auto;">
+                                <div class="relative">
+                                    <img alt="George Hoyt" src="assets/img/yuma.png" class="rounded-xl shadow-lg max-w-full h-auto align-middle border-none undefined" style="cursor: auto;">
+                                    <img class=" absolute top-0 p-2 rounded  right-0 m-2 " src="assets/img/heart.png">
+                                    </div>
+                                    <div class="pt-6 flex justify-between items-center">
+                                  <h1 class="text-gray-900 text-xl font-serif font-bold leading-normal mt-0 mb-2">Jack Wales</h1>
+                                  <p class="text-blue-gray-700 text-base font-light leading-relaxed mt-0 mb-4">CMO</p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <!--hii here 
+                            <div class="relative">
+                                <img class="w-full" src="https://dummyimage.com/500x250" alt="dummy-image">
+                                <button class="absolute top-0 bg-blue-500 text-white p-2 rounded hover:bg-blue-800 m-2">Button</button>
+                              </div> -->
+                            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" style="cursor: auto;">
+                              <div class="px-6 relative	" style="cursor: auto;">
+                                <div class="relative">
+                                <img alt="George Hoyt" src="assets/img/jun.png" class="rounded-xl shadow-lg max-w-full h-auto align-middle border-none undefined" style="cursor: auto;">
+                                <img class=" absolute top-0 p-2 rounded  right-0 m-2 " src="assets/img/heart.png">
+                                </div>
+                                <div class="pt-6 flex justify-between items-center">
+                                  <h1 class="text-gray-900 text-xl font-serif font-bold leading-normal mt-0 mb-2">George Hoyt</h1>
+                                  <p class="text-blue-gray-700 text-base font-light leading-relaxed mt-0 mb-4">Software Engineer</p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                              <div class="px-6">
+                                <div class="relative">
+                                    <img alt="George Hoyt" src="assets/img/follow1.png" class="rounded-xl shadow-lg max-w-full h-auto align-middle border-none undefined" style="cursor: auto;">
+                                    <img class=" absolute top-0 p-2 rounded  right-0 m-2 " src="assets/img/heart.png">
+                                    </div>            
+                                <div class="pt-6 flex justify-between items-center">
+                                  <h1 class="text-gray-900 text-xl font-serif font-bold leading-normal mt-0 mb-2">Isabella Bolt</h1>
+                                  <p class="text-blue-gray-700 text-base font-light leading-relaxed mt-0 mb-4">Human Resources</p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        </div>
+
+                    
+                   
+                    
+                
+                </div>
+                
+                <hr>
+
+                <div class="grid grid-cols-2 gap-4 mt-20  ml-40">
+                    <div class=" flex flex-col items-start">
+                        <img src="assets/img/bed.png" class=" flex-row  pt-0 text-2xl pl-1 text-rose-500 md:text-black" alt="">
+                    </div>
+                    <div class=" flex flex-col items-start">
+                        <span class="font-bold text-rose-500 tracking-widest text-2xl leading-10 mt-2"> Lodging</span>
+                    </div>
+                    
+                </div>
+
+
+                <div class="bg-white p-3 shadow-sm rounded-sm">
+                    
+                    <div style='background-color:rgba(0, 0, 0, 0)'>
+                        <div class="container max-w-7xl mx-auto px-4" style="cursor: auto;">
+                        
+                          <div class="flex flex-wrap">
+                            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                              <div class="px-6">
+                                    <div class="relative">
+                                    <img alt="George Hoyt" src="assets/img/Movenpick.png"class="rounded-xl shadow-lg max-w-full h-auto align-middle border-none undefined" style="cursor: auto;">
+                                    <img class=" absolute top-0 p-2 rounded  right-0 m-2 " src="assets/img/heart.png">
+                                    </div>
+                                <div class="pt-6 flex justify-between items-center">
+                                  <h1 class="text-gray-900 text-xl font-serif font-bold leading-normal mt-0 mb-2">John Doe</h1>
+                                  <p class="text-blue-gray-700 text-base font-light leading-relaxed mt-0 mb-4">CEO</p>
+                                  <!-- <div class="flex items-center justify-center">
+                                    <button class="false flex items-center justify-center gap-1 font-bold outline-none uppercase tracking-wider focus:outline-none focus:shadow-none transition-all duration-300 rounded-full w-10 h-10 p-0 grid place-items-center text-xs leading-normal bg-transparent text-light-blue-500 hover:bg-light-blue-50 hover:text-light-blue-700 hover:bg-light-blue-50 active:bg-light-blue-100 undefined">
+                                      <i class="fab fa-twitter undefined text-lg"></i>
+                                    </button>
+                                    <button class="false flex items-center justify-center gap-1 font-bold outline-none uppercase tracking-wider focus:outline-none focus:shadow-none transition-all duration-300 rounded-full w-10 h-10 p-0 grid place-items-center text-xs leading-normal bg-transparent text-blue-500 hover:bg-blue-50 hover:text-blue-700 hover:bg-blue-50 active:bg-blue-100 undefined">
+                                      <i class="fab fa-facebook-f undefined text-lg"></i>
+                                    </button>
+                                    <button class="false flex items-center justify-center gap-1 font-bold outline-none uppercase tracking-wider focus:outline-none focus:shadow-none transition-all duration-300 rounded-full w-10 h-10 p-0 grid place-items-center text-xs leading-normal bg-transparent text-pink-500 hover:bg-pink-50 hover:text-pink-700 hover:bg-pink-50 active:bg-pink-100 undefined">
+                                      <i class="fab fa-dribbble undefined text-lg"></i>
+                                    </button>
+                                  </div> -->
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" style="cursor: auto;">
+                              <div class="px-6" style="cursor: auto;">
+                                <div class="relative">
+                                    <img alt="George Hoyt" src="assets/img/yuma.png" class="rounded-xl shadow-lg max-w-full h-auto align-middle border-none undefined" style="cursor: auto;">
+                                    <img class=" absolute top-0 p-2 rounded  right-0 m-2 " src="assets/img/heart.png">
+                                    </div>
+                                    <div class="pt-6 flex justify-between items-center">
+                                  <h1 class="text-gray-900 text-xl font-serif font-bold leading-normal mt-0 mb-2">Jack Wales</h1>
+                                  <p class="text-blue-gray-700 text-base font-light leading-relaxed mt-0 mb-4">CMO</p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <!--hii here 
+                            <div class="relative">
+                                <img class="w-full" src="https://dummyimage.com/500x250" alt="dummy-image">
+                                <button class="absolute top-0 bg-blue-500 text-white p-2 rounded hover:bg-blue-800 m-2">Button</button>
+                              </div> -->
+                            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" style="cursor: auto;">
+                              <div class="px-6 relative	" style="cursor: auto;">
+                                <div class="relative">
+                                <img alt="George Hoyt" src="assets/img/jun.png" class="rounded-xl shadow-lg max-w-full h-auto align-middle border-none undefined" style="cursor: auto;">
+                                <img class=" absolute top-0 p-2 rounded  right-0 m-2 " src="assets/img/heart.png">
+                                </div>
+                                <div class="pt-6 flex justify-between items-center">
+                                  <h1 class="text-gray-900 text-xl font-serif font-bold leading-normal mt-0 mb-2">George Hoyt</h1>
+                                  <p class="text-blue-gray-700 text-base font-light leading-relaxed mt-0 mb-4">Software Engineer</p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+                              <div class="px-6">
+                                <div class="relative">
+                                    <img alt="George Hoyt" src="assets/img/follow1.png" class="rounded-xl shadow-lg max-w-full h-auto align-middle border-none undefined" style="cursor: auto;">
+                                    <img class=" absolute top-0 p-2 rounded  right-0 m-2 " src="assets/img/heart.png">
+                                    </div>            
+                                <div class="pt-6 flex justify-between items-center">
+                                  <h1 class="text-gray-900 text-xl font-serif font-bold leading-normal mt-0 mb-2">Isabella Bolt</h1>
+                                  <p class="text-blue-gray-700 text-base font-light leading-relaxed mt-0 mb-4">Human Resources</p>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                        </div>
+                        </div>
+
+                    <!--
+                        <div class="flex justify-between items-center">
+                            <span class="text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                            <a href="#" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+                        </div>
+                    -->
+                
+                </div>
+                
+                       
+                     
+            
+    </ng-container>
+
+    <ng-container  *ngIf="isSelected == 'req'">
+            
+            
+        <div class="mt-20  ml-80">
+           
+            
+                <span class="font-bold text-rose-500 tracking-widest text-2xl leading-10 mt-2"> New Requests</span>
+          
+        </div>
+        
+                
+                
+                <div class="bg-white p-3 shadow-sm rounded-sm">
+                    
+                   
+
+                    
+                    <div class="flex flex-col mt-14 items-center w-full"> 
+
+                            <div  class="flex flex-col  gap-0 justify-between   w-fit  bg-white rounded-lg border shadow-md md:flex-row hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
+                                <div class="flex flex-col justify-between p-4 ">
+                                    <div class="flex justify-between items-center">
+                                        <span class="mb-2 text-l font-bold tracking-tight text-gray-900 dark:text-white ">Experience's name</span>
+                                        <div class="z-10">
+                                            <button class="primary-button2 ml-16"id="bouton"> channnge </button>
+                                        </div>    
+                                        <div class="z-10 ">
+                                            <button class="primary-button2"id="bouton"> change</button>
+                                        </div>                                   
+                                    </div>
+
+
+                                    <div>
+                                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Description :</p>
+                                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                    </div>
+
+                                    <div class="flex justify-between items-center ">
+                                        <div>
+                                        <span class="mb-2 text-l font-bold tracking-tight text-gray-900 dark:text-white ">80 DT / Person</span>
+                                        <br><br>
+                                        <span class="mb-2 text-l font-bold tracking-tight text-gray-900 dark:text-white ">Bizert</span>
+
+                                        </div>
+                                        <div >
+                                            <span class="mb-2 ml-16 text-l font-bold tracking-tight text-gray-900 dark:text-white ">80 DT / Person</span>
+                                            <br><br>
+                                            <span class="mb-2 text-l ml-16 font-bold tracking-tight text-gray-900 dark:text-white ">Details</span>
+
+                                        </div>    
+                                                                      
+    
+    
+                                    </div>
+                                    <div class="flex justify-center  mt-6">
+                                        <div class="z-10 mx-2">
+                                            <button class="primary-button"id="bouton"> Edit </button>
+                                        </div>    
+                                        <div class="z-10 ">
+                                            <button class="previous-button"id="bouton"> Delete</button>
+                                        </div>  
+                                    </div>
+
+                                </div>
+
+                                
+                                <div class="max-w-xs">
+                                    <div class="bg-white shadow-xl rounded-lg py-3">
+                                        <div class="flex justify-start items-center">
+                                        <div class="photo-wrapper p-2">
+                                            <img class="w-16 h-16 rounded-full " src="assets/img/Ellipse.png" alt="John Doe">
+                                        </div>
+                                            <div class=" text-black-500  text-xs font-semibold pr-4">
+                                                <p>Sarah ben mansour</p>
+                                                <a class="text-xs text-indigo-500 italic hover:underline hover:text-indigo-600 font-medium" href="#">View Profile</a>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="p-2">
+                                            <div class="text-left ">
+                                            <span class="text-xl leading-10 text-black-500  ">NameHost</span>
+                                            </div>
+                                            <div class="text-left ">
+
+
+                                            <span class=" text-xl leading-10 text-black-500 ">Host </span> 
+                                            </div>
+                                
+                                            <div class="flex justify-between">
+                                                <div class="z-10 mt-2">
+                                                    <button class="bb" id="bouton" > Edit </button>
+                                                </div>    
+                                                <div class="z-10 mt-2 ">
+                                                    <button class="bb"id="bouton"> Delete</button>
+                                                </div>  
+                                                <div class="z-10 ">
+                                                <button type="button" class=""> <img src="assets/img/mssg.png" /></button>
+                                                </div>
+
+                                            </div>
+                                
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                           
+                            
+                        
+                        <span class=" mt-16 "></span>
+
+                        <button type="button"> <img src="assets/img/addE.png" height ="400" width="400" /></button>
+                        <hr class="mb-16">
+
+                       
+
+                       
+                    </div>
+                    
+                
+                </div>
+                       
+                     
+            
+                       
+                     
+            
+    </ng-container>
+    
+</div>
